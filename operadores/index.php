@@ -20,5 +20,14 @@ echo "<br><br><br>Agora seu saldo é $saldo ";
 $saldo  -= 10;//Operador de Subtração
 echo "<br><br><br>Agora seu saldo é $saldo ";
 
+$saldo  += 50;//Operador de Soma
+echo "<br><br><br>Agora seu saldo é $saldo ";
+
 $saldo  *= 1000;//Operador de Multiplicação
 echo "<br><br><br>Agora seu saldo é $saldo ";
+
+$saldo  /= 1000;//Operador de Divisão
+echo "<br><br><br>Agora seu saldo é $saldo ";
+
+
+
