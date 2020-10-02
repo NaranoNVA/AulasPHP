@@ -19,6 +19,7 @@ whatsapp BIGINT)' ) ){
 #endregion
 
 #region Inserir na Tabela
+
 $contato = ['nome' => 'Nicolas Alberto', 'whatsapp' => '5511984784684'];
 
 if(mysqli_query( $db, //INSERE DADOS NO BANCO 
@@ -29,6 +30,7 @@ VALUES ('{$contato['nome']}','{$contato['whatsapp']}' )" )){
 }else{
     echo"Contato não inserido.<br>";
 }
+
 #endregion
 
 #region Listar na Tabela
