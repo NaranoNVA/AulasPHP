@@ -1,18 +1,12 @@
 <?php
-session_start();
-
-var_dump($_SESSION);
-
-$_SESSION['user'] = 'Nicolau';
-
-echo 'Seu ID é: '. session_id();
-
+require 'sessao.php';
 ?>
 <html>
 
 <head></head>
 
 <body>
+    <?php include "index_menu_tpl.php"; ?>
     <div style="text-align: center;">
         <h1>Diga o quanto você gosta desta aula?</h1>
         <form method="post" action="nps.php">

@@ -1,9 +1,12 @@
 <?php
+require 'sessao.php';
 
-session_start();
-echo 'Seu id é: '. session_id();
+include 'header_tpl.php';
+include "index_menu_tpl.php";
+include "footer_tpl.php";
 
-if( isset($_GET['nota']) && isset($_GET['protocolo']) ){
+
+if( isset($_GET['nota']) ){
     $nota = $_GET['nota'] ?? $_POST['nota']; // pode usar o $_REQUEST também ele funciona pega tanto o GET quanto o POST
     switch ($nota){
         case $nota <= 4:

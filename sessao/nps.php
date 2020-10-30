@@ -4,10 +4,10 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-session_start();
-echo 'seu nome é:' . $_SESSION['user'];
+require 'sessao.php';
 
-//var_dump($_POST);
+include 'header_tpl.php';
+include "index_menu_tpl.php";
 
 $nota = $_POST['nota'];
 $explicacao = $_POST['explicacao'];
@@ -28,5 +28,7 @@ if( $objStmt->execute() ){
     echo 'Nota não enviada.';
 }
 
-echo "<div><a href='agradecimento.php?nota=$nota'>Seguir</a></div>"
+echo "<div><a href='agradecimento.php?nota=$nota'>Seguir</a></div>";
+
+include "footer_tpl.php";
 ?>
