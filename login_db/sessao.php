@@ -3,6 +3,6 @@
 session_start();
 
 if ( !isset($_SESSION['login']) ) {
-    header('Location: /senac-tsi-php-2020-2/sessao/');
+    header('Location: /AulasPHP/login_dv/index.php');
     
 } 

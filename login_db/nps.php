@@ -15,7 +15,7 @@ echo "<div><p>Você deu a nota $nota pelo motivo \"$explicacao\" </p></div>";
 
 $db = new PDO('sqlsrv:Server=localhost\sqlexpress;Database=PhpAula', 'sa', 'huesenha4455');
 
-$stmt = $db->prepare('	INSERT INTO nps ( nota, explicacao) VALUES ( :nota, :explicacao)');
+$stmt = $db->prepare('	INSERT INTO dbo.nps ( nota, explicacao) VALUES ( :nota, :explicacao)');
 
 $stmt->bindParam(':nota', $nota);					
 $stmt->bindParam(':explicacao', $explicacao);	

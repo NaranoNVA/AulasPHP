@@ -18,7 +18,7 @@ if ( isset($_SESSION['login']) ) { //Caso o usuário já esteja logado
 	$senha = $_POST['senha'];
 
 	//Verficar se existe o usuario
-	$r = $db->query("SELECT senha FROM usuario WHERE email = '$login'");
+	$r = $db->query("SELECT senha FROM dbo.usuario WHERE email = '$login'");
 	$reg = $r->fetch(PDO::FETCH_ASSOC);
 	$hash = $reg['senha'];
 
