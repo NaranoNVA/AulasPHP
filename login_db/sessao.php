@@ -3,6 +3,6 @@
 session_start();
 
 if ( !isset($_SESSION['login']) ) {
-    header('Location: /AulasPHP/login_dv/index.php');
+    header('Location: /AulasPHP/login_db/index.php');
     
 } 

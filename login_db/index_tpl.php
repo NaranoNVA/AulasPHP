@@ -10,7 +10,6 @@
 </head>
 
 <body>
-    <br><br><br><br>
     <div style="text-align: center;">
         <table>
             <tr>
@@ -28,6 +27,10 @@
                         <div style="margin-top:5px;">
                         <label for="senha">Senha</label>
                         <input type="password" id="senha" name="senha">
+                        </div>
+
+                        <div style="margin-top:5px;">
+                        <a href="usuario/cadastro.php">Cadastre-se</a>
                         </div>
 
                         <div style="margin-top:5px;"><input type="submit" name="entrar" value="Entrar"></div>

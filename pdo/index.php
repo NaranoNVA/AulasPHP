@@ -9,7 +9,7 @@ include 'db.php'; //Configuração do SQL pelo include
 /* Configuração do SQL pelas variaveis
 $dns = 'sqlsrv:Server=localhost\sqlexpress;Database=PhpAula';
 $user = 'sa';
-$password = 'huesenha4455';
+$password = 'A3154868e@';
 $db = new PDO( $dns, $user, $password );
 */
 

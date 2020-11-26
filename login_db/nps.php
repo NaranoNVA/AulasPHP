@@ -13,7 +13,7 @@ $explicacao = $_POST['explicacao'];
 
 echo "<div><p>Você deu a nota $nota pelo motivo \"$explicacao\" </p></div>";
 
-$db = new PDO('sqlsrv:Server=localhost\sqlexpress;Database=PhpAula', 'sa', 'huesenha4455');
+$db = new PDO('sqlsrv:Server=localhost\sqlexpress;Database=PhpAula', 'sa', 'A3154868e@');
 
 $stmt = $db->prepare('	INSERT INTO dbo.nps ( nota, explicacao) VALUES ( :nota, :explicacao)');
 

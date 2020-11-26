@@ -2,7 +2,7 @@
 
 $dsn = 'sqlsrv:Server=localhost\sqlexpress;Database=PhpAula';
 $user = 'sa';
-$password = 'huesenha4455';
+$password = 'A3154868e@';
 
 
 $db = new PDO($dsn, $user, $password);
