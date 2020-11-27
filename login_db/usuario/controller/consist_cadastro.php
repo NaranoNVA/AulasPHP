@@ -1,6 +1,4 @@
 <?php
-chdir(__DIR__);
-require '../model/dados.php';
 
 $nome = $_POST['nome'] ?? null;
 $email = $_POST['email'] ?? null;
@@ -18,8 +16,10 @@ if( strlen($nome) < 2 ){
 //Verifica se o e-mail é valido
 if( !filter_var($email, FILTER_VALIDATE_EMAIL) ){
     $erros[] = 'O Email digitado não é invalido.';
-}elseif( ja_existe_email($email) ){
-    $erros[] = 'Email ja cadastrado.';
+
+}elseif( ja_existe_email($email) && !isset($_POST['gravar'])){ 
+
+    $erros[] = 'Email ja cadastrado.';  
 
 }
 
